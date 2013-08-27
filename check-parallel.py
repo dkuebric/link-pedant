@@ -95,7 +95,7 @@ class LinkCheck(object):
             return
 
         # no need to go further if this is external
-        if (not 'www.appneta.com' in url and not '/appneta.com' in url) or '/blog/' in url:
+        if (not 'www.appneta.com' in url and not '/appneta.com' in url):
             return
 
         # recursive link traversal -- cache links first
